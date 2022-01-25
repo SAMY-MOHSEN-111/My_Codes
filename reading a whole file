@@ -1,0 +1,16 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+    fstream infile;
+    fstream outfile;
+    infile.open("C:\\Users\\samym\\Desktop\\pronze marathon\\untitled32\\input.txt",ios::in);
+    outfile.open("C:\\Users\\samym\\Desktop\\pronze marathon\\untitled32\\output.txt",ios::out);
+    char ch;
+    while(infile){
+        ch=infile.get();
+        if(ch==EOF)break;
+        outfile.put(ch);
+    }
+    return 0;
+}
